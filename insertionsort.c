@@ -2,7 +2,7 @@
 
 #define MAX 7
 
-void result_print(int n, int arr[]);
+void result_print(int arr[]);
 void insertion_sort(int n, int arr[]);
 void swap(int* a, int* b);
 
@@ -11,15 +11,15 @@ int main()
 	int arr[MAX] = {7,5,2,1,4,6,3};
 
 	printf("before array : ");
-	result_print(MAX, arr);
+	result_print(arr);
 	insertion_sort(MAX, arr);
 	printf("sorted array : ");
-	result_print(MAX, arr);
+	result_print(arr);
 
 	return 0;
 }
 
-void result_print(int a, int arr[])
+void result_print(int arr[])
 {
 	for (int a=0; a < MAX; a++)
 	{
