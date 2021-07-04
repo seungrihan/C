@@ -2,7 +2,7 @@
 
 #define MAX 6
 
-void result_print(int a, int arr[]);
+void result_print(int arr[]);
 void swap(int* a, int* b);
 void bubble_sort(int k, int j, int arr[]);
 
@@ -11,10 +11,10 @@ int main()
 	int arr[MAX] = { 5,1,3,4,2,6 };
 
 	printf("before array : ");
-	result_print(MAX, arr);
+	result_print(arr);
 	bubble_sort(MAX, 5, arr);
 	printf("sorted array : ");
-	result_print(MAX, arr);
+	result_print(arr);
 }
 
 void swap(int* a, int* b)
@@ -24,7 +24,7 @@ void swap(int* a, int* b)
 	*b = temp;
 }
 
-void result_print(int a, int arr[])
+void result_print(int arr[])
 {
 	for (int a=0; a < MAX; a++)
 	{
