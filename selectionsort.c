@@ -37,12 +37,14 @@ void selection_sort(int k, int j, int arr[])
 {	
 	for (int k=0; k < MAX-1; k++)
 	{
+		int min = k;
 		for (int j=k+1; j < MAX; j++)
 		{
-			if (arr[k] > arr[j])
+			if (arr[j] < arr[min])
 			{
-				swap(&arr[k], &arr[j]);
+				min = j;
 			}
 		}
+		swap(&arr[k], &arr[min]);
 	}
 }
