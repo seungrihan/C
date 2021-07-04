@@ -17,7 +17,6 @@ int main()
 	result_print(MAX, arr);
 
 	return 0;
-
 }
 
 void result_print(int a, int arr[])
